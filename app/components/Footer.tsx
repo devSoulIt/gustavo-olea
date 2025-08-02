@@ -68,7 +68,7 @@ const Footer = () => {
                 <h3 className="text-2xl font-bold">Gustavo Olea</h3>
               </div>
               <p className="text-lg mb-6 text-gray-300 leading-relaxed">
-                Nadador profesional argentino con la meta de representar al país 
+                Nadador argentino de alto rendimiento con la meta de representar al país 
                 en la Copa del Mundo de Natación Dubái 2025. Buscando patrocinadores 
                 que compartan la pasión por la excelencia deportiva.
               </p>

@@ -33,9 +33,9 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Impulsando el límite
+          Rumbo a la gran final
           <br />
-          <span className="text-[var(--brand-accent)]">rumbo a Dubái 2025</span>
+          <span className="text-[var(--brand-accent)]"> mundial oceanman 2025</span>
         </motion.h1>
 
         <motion.p
@@ -44,7 +44,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          Nadador profesional argentino buscando patrocinadores para competir en la Copa del Mundo de Natación 2025
+          Nadador argentino de alto rendimiento, un apasionado del deporte y de la natación competitiva
         </motion.p>
 
         <motion.div

@@ -54,12 +54,11 @@ const MediaKit = () => {
   ];
 
   const quickFacts = [
-    { label: 'Edad', value: '24 años' },
-    { label: 'Especialidad', value: '200m Estilo Libre' },
-    { label: 'Mejor Marca', value: '1:45.23' },
-    { label: 'Ranking Mundial', value: '#7' },
+    { label: 'Edad', value: '17 años' },
+    { label: 'Especialidad', value: '2,5km - 6km' },
+    { label: 'Ranking NOA', value: '2°' },
     { label: 'Nacionalidad', value: 'Argentina' },
-    { label: 'Residencia', value: 'Buenos Aires' }
+    { label: 'Residencia', value: 'Tucumán' }
   ];
 
   return (
@@ -214,16 +213,12 @@ const MediaKit = () => {
               <CardContent>
                 <div className="space-y-3 text-sm">
                   <div className="border-l-4 border-[var(--brand-accent)] pl-3">
-                    <div className="font-semibold">Copa del Mundo - Dubái</div>
-                    <div className="text-gray-600">Diciembre 2025</div>
+                    <div className="font-semibold">Final mundial oceanman 2025 - Dubái</div>
+                    <div className="text-gray-600">1 - 7 diciembre</div>
                   </div>
                   <div className="border-l-4 border-[var(--brand-primary)] pl-3">
-                    <div className="font-semibold">Sudamericano - Lima</div>
-                    <div className="text-gray-600">Septiembre 2025</div>
-                  </div>
-                  <div className="border-l-4 border-[var(--brand-primary)] pl-3">
-                    <div className="font-semibold">Nacional - Mar del Plata</div>
-                    <div className="text-gray-600">Julio 2025</div>
+                    <div className="font-semibold">Circuito NOA</div>
+                    <div className="text-gray-600">2025 - 2026</div>
                   </div>
                 </div>
               </CardContent>

@@ -201,29 +201,8 @@ const Testimonials = () => {
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              <div className="text-4xl font-bold text-[var(--brand-accent)] mb-2">5+</div>
-              <div className="text-lg">Años con Entrenador</div>
-              <div className="text-sm opacity-80">Carlos Méndez - Olímpico</div>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              viewport={{ once: true }}
-            >
-              <div className="text-4xl font-bold text-[var(--brand-accent)] mb-2">3</div>
-              <div className="text-lg">Patrocinadores Actuales</div>
-              <div className="text-sm opacity-80">Empresas satisfechas</div>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              viewport={{ once: true }}
-            >
-              <div className="text-4xl font-bold text-[var(--brand-accent)] mb-2">100%</div>
-              <div className="text-lg">Renovación</div>
-              <div className="text-sm opacity-80">Tasa de re-patrocinio</div>
+              <div className="text-4xl font-bold text-[var(--brand-accent)] mb-2">8</div>
+              <div className="text-lg">Años de co nadador</div>
             </motion.div>
           </div>
         </motion.div>

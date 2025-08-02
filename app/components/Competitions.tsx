@@ -104,20 +104,12 @@ const Competitions = () => {
         >
           <div className="bg-white rounded-2xl p-8 shadow-lg inline-block">
             <h3 className="text-2xl font-bold text-[var(--brand-primary)] mb-4">
-              Estadísticas Actuales
+              Competencia NOA
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="text-center">
-                <div className="text-3xl font-bold text-[var(--brand-accent)] mb-2">#7</div>
-                <div className="text-gray-600">Ranking Mundial</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-[var(--brand-accent)] mb-2">12</div>
-                <div className="text-gray-600">Medallas Internacionales</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-[var(--brand-accent)] mb-2">5</div>
-                <div className="text-gray-600">Récords Nacionales</div>
+                <div className="text-3xl font-bold text-[var(--brand-accent)] mb-2">2°</div>
+                <div className="text-gray-600">Ranking</div>
               </div>
             </div>
           </div>

@@ -15,7 +15,7 @@ const Dubai2025 = () => {
   });
 
   useEffect(() => {
-    const targetDate = new Date('2025-12-15').getTime();
+    const targetDate = new Date('2025-12-1').getTime();
 
     const interval = setInterval(() => {
       const now = new Date().getTime();
@@ -103,14 +103,11 @@ const Dubai2025 = () => {
               <div>
                 <h3 className="text-2xl font-bold mb-4">Mi Objetivo</h3>
                 <p className="text-lg leading-relaxed mb-6">
-                  Clasificar entre los 3 mejores nadadores del mundo en 200m estilo libre, 
-                  representando a Argentina en la competencia más prestigiosa del año. 
-                  Esta es mi oportunidad de demostrar que el talento sudamericano puede competir 
-                  al más alto nivel internacional.
+                  Clasificar entre el top 10 de la final mundial 2025 en dubai, representando a argentina en una competencia de alto prestigio y nivel internacional
                 </p>
                 <div className="flex items-center gap-4 text-[var(--brand-accent)]">
                   <Target className="w-6 h-6" />
-                  <span className="text-lg font-semibold">Meta: Top 3 Mundial</span>
+                  <span className="text-lg font-semibold">Meta: Top 10 Mundial</span>
                 </div>
               </div>
 

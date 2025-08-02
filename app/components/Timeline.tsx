@@ -19,35 +19,23 @@ const Timeline = () => {
 
   const timelineData: TimelineItem[] = [
     {
-      year: '2018',
-      title: 'Debut Internacional',
-      description: 'Primera participación en campeonatos sudamericanos juveniles',
+      year: '2022 - 2023',
+      title: 'NOA',
+      description: '1° del NOA en 1km',
       icon: <Star className="w-6 h-6" />
     },
     {
-      year: '2020',
-      title: 'Récord Nacional',
-      description: 'Establecimiento del récord argentino en 200m estilo libre',
+      year: '2023 - 2024',
+      title: 'NOA',
+      description: '3° del NOA en 2,5km',
       icon: <Trophy className="w-6 h-6" />
     },
     {
-      year: '2022',
-      title: 'Juegos Panamericanos',
-      description: 'Medalla de plata en competencia continental',
+      year: '2024 - 2025',
+      title: 'NOA',
+      description: '2° del NOA en 6km',
       icon: <Medal className="w-6 h-6" />
     },
-    {
-      year: '2023',
-      title: 'Mundial de Budapest',
-      description: 'Clasificación a finales y séptimo lugar mundial',
-      icon: <Award className="w-6 h-6" />
-    },
-    {
-      year: '2025',
-      title: 'Meta: Copa del Mundo',
-      description: 'Objetivo de medalla en Dubái 2025',
-      icon: <Target className="w-6 h-6" />
-    }
   ];
 
   return (
@@ -90,11 +78,13 @@ const Timeline = () => {
                   transition={{ duration: 0.6, delay: index * 0.2 }}
                 >
                   {/* Icon Circle */}
-                  <div className={`w-16 h-16 rounded-full flex items-center justify-center mb-4 ${
+                  <div className={`w-16 h-16 rounded-full flex items-center justify-center mb-4 
+                  ${
                     index === timelineData.length - 1 
                       ? 'bg-[var(--brand-accent)] text-white' 
                       : 'bg-[var(--brand-primary)] text-white'
-                  }`}>
+                  }
+                  `}>
                     {item.icon}
                   </div>
 
