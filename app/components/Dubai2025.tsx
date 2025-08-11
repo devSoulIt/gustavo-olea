@@ -44,26 +44,26 @@ const Dubai2025 = () => {
   const fundingNeeds = [
     {
       icon: <Plane className="w-6 h-6" />,
-      title: 'Viajes y Estadía',
-      amount: '$8,000',
-      description: 'Vuelos, alojamiento y alimentación en Dubái'
+      title: 'Viaje',
+      amount: '$5.000',
+      description: 'Vuelos y transporte para el equipo y equipamiento'
     },
     {
       icon: <Users className="w-6 h-6" />,
-      title: 'Equipo Técnico',
-      amount: '$5,000',
-      description: 'Entrenador, fisioterapeuta y analista deportivo'
+      title: 'Estadia',
+      amount: '$1.600',
+      description: 'Alojamiento y logística para el equipo técnico y de apoyo'
     },
     {
       icon: <Target className="w-6 h-6" />,
       title: 'Equipamiento',
-      amount: '$3,000',
+      amount: '$400 - $600',
       description: 'Trajes de competencia, gafas y equipos especializados'
     },
     {
       icon: <Award className="w-6 h-6" />,
       title: 'Preparación',
-      amount: '$4,000',
+      amount: '$400',
       description: 'Entrenamientos en altura y campamentos de preparación'
     }
   ];
@@ -166,6 +166,7 @@ const Dubai2025 = () => {
                     <Card className="bg-white/20 border-white/30 text-white">
                       <CardContent className="p-4">
                         <div className="flex items-center justify-between">
+                          
                           <div className="flex items-center space-x-3">
                             <div className="text-[var(--brand-accent)]">
                               {need.icon}
@@ -175,7 +176,8 @@ const Dubai2025 = () => {
                               <p className="text-sm opacity-80">{need.description}</p>
                             </div>
                           </div>
-                          <div className="text-xl font-bold text-[var(--brand-accent)]">
+
+                          <div className="text-md font-bold text-[var(--brand-accent)]">
                             {need.amount}
                           </div>
                         </div>
@@ -187,7 +189,7 @@ const Dubai2025 = () => {
 
               <div className="text-center border-t border-white/30 pt-6">
                 <div className="text-3xl font-bold text-[var(--brand-accent)] mb-2">
-                  $20,000 USD
+                  $7.600 USD
                 </div>
                 <div className="text-lg mb-6">Inversión total necesaria</div>
                 <Button
