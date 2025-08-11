@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Send, Phone, MessageCircle, Eye, Users, TrendingUp, Calendar, Star } from 'lucide-react';
+import { Send, Phone, MessageCircle, Eye, Users, TrendingUp, Calendar, Star, Mail } from 'lucide-react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
@@ -68,34 +68,32 @@ const Sponsorship = () => {
   const sponsorshipTiers = [
     {
       name: 'Patrocinador Principal',
-      amount: '$15,000',
+      amount: '$50.000 ARS',
       benefits: [
-        'Logo prominente en traje de competencia',
-        'Mención en todas las entrevistas',
-        'Contenido exclusivo para redes sociales',
-        '6 eventos corporativos anuales',
-        'Merchandising personalizado'
+        'Logo e indumentaria',
+        'Publicidad en redes sociales',
+        'Publicidad de productos y servicios',
+        'Eventos coperativos exclusivos',
       ],
       color: 'bg-[var(--brand-accent)]'
     },
     {
       name: 'Patrocinador Oficial',
-      amount: '$8,000',
+      amount: '$35.000 ARS',
       benefits: [
-        'Logo en traje de entrenamiento',
-        'Posts mensuales en redes sociales',
-        '3 eventos corporativos anuales',
-        'Merchandising estándar'
+        'Publicidad en redes sociales',
+        'Entrevistas y menciones',
+        'Publicidad de productos y servicios',
+        '6 eventos coperativos anuales'
       ],
       color: 'bg-[var(--brand-primary)]'
     },
     {
       name: 'Colaborador',
-      amount: '$3,000',
+      amount: '$15.000',
       benefits: [
-        'Mención en biografías de redes',
-        'Post trimestral de agradecimiento',
-        '1 evento corporativo anual'
+        'Publicidad en redes sociales',
+        'Publicidad de productos y servicios',
       ],
       color: 'bg-gray-600'
     }
@@ -182,7 +180,7 @@ const Sponsorship = () => {
                     <CardTitle className="text-xl">{tier.name}</CardTitle>
                     <div className="text-3xl font-bold">{tier.amount}</div>
                     {index === 0 && (
-                      <Badge className="bg-white text-[var(--brand-accent)] w-fit mx-auto">
+                      <Badge className="bg-white text-[var(--brand-accent)] w-fit mx-auto my-1">
                         <Star className="w-3 h-3 mr-1" />
                         Recomendado
                       </Badge>
@@ -318,17 +316,16 @@ const Sponsorship = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <Button
-                  className="w-full bg-[var(--brand-primary)] hover:bg-[var(--brand-primary)]/90 text-white border-none justify-start"
+                className="w-full text-[var(--brand-primary)] border-none justify-start"
                   size="lg"
-                  onClick={() => window.open('https://calendly.com/alex-martinez-swimmer', '_blank')}
                 >
-                  <Calendar className="w-5 h-5 mr-3" />
-                  Programar Videollamada
+                  <Mail />
+                  gustavoolea23@gmail.com
                 </Button>
                 <Button
                   className="w-full bg-green-600 hover:bg-green-700 text-white border-none justify-start"
                   size="lg"
-                  onClick={() => window.open('https://wa.me/5491123456789?text=Hola%20Alex,%20estoy%20interesado%20en%20patrocinar%20tu%20carrera', '_blank')}
+                  onClick={() => window.open('https://wa.me/5493863562958?text=Hola%20Gustavo,%20estoy%20interesado%20en%20patrocinar%20tu%20carrera', '_blank')}
                 >
                   <MessageCircle className="w-5 h-5 mr-3" />
                   WhatsApp Business
@@ -337,10 +334,10 @@ const Sponsorship = () => {
                   variant="outline"
                   className="w-full text-[var(--brand-primary)] border-[var(--brand-primary)] hover:bg-[var(--brand-primary)] hover:text-white justify-start"
                   size="lg"
-                  onClick={() => window.open('tel:+5491123456789')}
+                  onClick={() => window.open('tel:+5493863562958', '_blank')}
                 >
                   <Phone className="w-5 h-5 mr-3" />
-                  +54 9 11 2345-6789
+                  +54 9 3863 562958
                 </Button>
               </CardContent>
             </Card>
