@@ -23,27 +23,35 @@ const Testimonials = () => {
   const testimonials: Testimonial[] = [
     {
       id: 1,
-      name: 'Carlos Méndez',
-      role: 'Entrenador Principal',
-      organization: 'Selección Argentina de Natación',
-      content: 'Alex es uno de los nadadores más dedicados y talentosos que he entrenado en mis 20 años de carrera. Su disciplina y determinación son ejemplares, y estoy convencido de que puede lograr grandes cosas en Dubái 2025.',
-      initials: 'CM'
+      name: '',
+      role: '',
+      organization: '',
+      content: 'La natación es mi pasión, mi escape y mi desafio.',
+      initials: 'Olea'
     },
     {
       id: 2,
-      name: 'Marina Rodríguez',
-      role: 'Directora de Marketing',
-      organization: 'SportTech Argentina',
-      content: 'Patrocinar a Alex ha sido una de nuestras mejores decisiones. Su profesionalismo y el alcance que nos ha dado a nivel internacional superó todas nuestras expectativas. Es un verdadero embajador de marca.',
-      initials: 'MR'
+      name: '',
+      role: '',
+      organization: '',
+      content: 'La victoria es para aquellos que se niegan a rendirse.',
+      initials: 'Olea'
     },
     {
       id: 3,
-      name: 'Javier Ortega',
-      role: 'Periodista Deportivo',
-      organization: 'ESPN Latinoamérica',
-      content: 'He cubierto la carrera de Alex durante los últimos tres años y puedo afirmar que es uno de los atletas más prometedores de Sudamérica. Su evolución ha sido constante y su potencial es innegable.',
-      initials: 'JO'
+      name: '',
+      role: '',
+      organization: '',
+      content: 'La natación es un deporte de mentalidad, donde la fuerza y la resistencia son claves.',
+      initials: 'Olea'
+    },
+    {
+      id: 4,
+      name: '',
+      role: '',
+      organization: '',
+      content: 'La natación me enseña a superar mis limites y a creer en mí mismo.',
+      initials: 'Olea'
     }
   ];
 
@@ -85,10 +93,10 @@ const Testimonials = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-[var(--brand-primary)] mb-4">
-            Lo que Dicen de Mí
+            Mis pensamientos
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Testimonios de quienes han trabajado conmigo y conocen mi dedicación
+            Lo que me motiva a seguir adelante cada día
           </p>
         </motion.div>
 
@@ -119,17 +127,6 @@ const Testimonials = () => {
                               {testimonials[currentIndex].initials}
                             </AvatarFallback>
                           </Avatar>
-                          <div className="text-left">
-                            <div className="font-bold text-[var(--brand-primary)] text-lg">
-                              {testimonials[currentIndex].name}
-                            </div>
-                            <div className="text-gray-600">
-                              {testimonials[currentIndex].role}
-                            </div>
-                            <div className="text-[var(--brand-accent)] font-medium">
-                              {testimonials[currentIndex].organization}
-                            </div>
-                          </div>
                         </div>
                       </div>
                     </CardContent>
