@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Instagram, Twitter, Linkedin, Mail, Phone, MapPin, Waves, Heart } from 'lucide-react';
+import { Instagram, Twitter, Linkedin, Mail, Phone, MapPin, Heart } from 'lucide-react';
 import { Button } from './ui/button';
 
 const Footer = () => {
@@ -64,7 +64,11 @@ const Footer = () => {
               viewport={{ once: true }}
             >
               <div className="flex items-center space-x-3 mb-6">
-                <Waves className="w-8 h-8 text-[var(--brand-accent)]" />
+                <img
+                  src="/images/Logo Gustavo.png"
+                  alt="Logo Gustavo Olea"
+                  className="w-28 h-28 object-contain"
+                />
                 <h3 className="text-2xl font-bold">Gustavo Olea</h3>
               </div>
               <p className="text-lg mb-6 text-gray-300 leading-relaxed">
@@ -77,19 +81,19 @@ const Footer = () => {
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-[var(--brand-accent)]" />
-                  <a href="mailto:alex@alexmartinez.com" className="text-gray-300 hover:text-white transition-colors">
-                    alex@alexmartinez.com
+                  <a href="mailto:gustavoolea23@gmail.com" className="text-gray-300 hover:text-white transition-colors">
+                    gustavoolea23@gmail.com
                   </a>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-[var(--brand-accent)]" />
                   <a href="tel:+5491123456789" className="text-gray-300 hover:text-white transition-colors">
-                    +54 9 11 2345-6789
+                    +54 9 3863 562958
                   </a>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MapPin className="w-5 h-5 text-[var(--brand-accent)]" />
-                  <span className="text-gray-300">Buenos Aires, Argentina</span>
+                  <span className="text-gray-300">Tucumán, Argentina</span>
                 </div>
               </div>
             </motion.div>

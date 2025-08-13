@@ -23,60 +23,81 @@ const Gallery = () => {
   const images: GalleryImage[] = [
     {
       id: 1,
-      src: 'https://images.unsplash.com/photo-1573289662276-1b5ad58db4b9?ixlib=rb-4.0.3&w=800&q=80',
-      alt: 'Entrenamiento en piscina olímpica',
+      src: '/images/1.webp',
+      alt: 'Entrenamiento en aguas abiertas',
       category: 'Entrenamiento',
       year: '2024'
     },
     {
       id: 2,
-      src: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&w=800&q=80',
-      alt: 'Competencia internacional',
-      category: 'Competencia',
-      year: '2024'
-    },
-    {
-      id: 3,
-      src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&w=800&q=80',
-      alt: 'Ceremonia de premiación',
-      category: 'Premiación',
-      year: '2023'
-    },
-    {
-      id: 4,
-      src: 'https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?ixlib=rb-4.0.3&w=800&q=80',
-      alt: 'Sesión de entrenamiento técnico',
+      src: '/images/2.webp',
+      alt: 'Entrenamiento en MVC',
       category: 'Entrenamiento',
       year: '2024'
     },
     {
+      id: 3,
+      src: '/images/3.webp',
+      alt: 'Entrenamiento en pileta olímpica',
+      category: 'Entrenamiento',
+      year: '2023'
+    },
+    {
+      id: 4,
+      src: '/images/4.webp',
+      alt: 'Competencia',
+      category: 'Competencia',
+      year: '2024'
+    },
+    {
       id: 5,
-      src: 'https://images.unsplash.com/photo-1520637836862-4d197d17c0a9?ixlib=rb-4.0.3&w=800&q=80',
-      alt: 'Mundial de Budapest 2023',
+      src: '/images/5.webp',
+      alt: 'Competencia',
       category: 'Competencia',
       year: '2023'
     },
     {
       id: 6,
-      src: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&w=800&q=80',
-      alt: 'Entrenamiento de resistencia',
-      category: 'Entrenamiento',
+      src: '/images/6.webp',
+      alt: 'Competencia',
+      category: 'Competencia',
       year: '2024'
     },
     {
       id: 7,
-      src: 'https://images.unsplash.com/photo-1586040280348-b464fe659b42?ixlib=rb-4.0.3&w=800&q=80',
-      alt: 'Juegos Panamericanos Santiago',
+      src: '/images/8.webp',
+      alt: 'Patrocinadores apoyando en competencia',
       category: 'Competencia',
       year: '2023'
     },
     {
       id: 8,
-      src: 'https://images.unsplash.com/photo-1591154669695-5f2a8d20c089?ixlib=rb-4.0.3&w=800&q=80',
-      alt: 'Medalla de plata continental',
+      src: '/images/9.webp',
+      alt: 'Entrenamiento MVC',
+      category: 'Entrenamiento',
+      year: '2023'
+    },
+    {
+      id: 9,
+      src: '/images/10.webp',
+      alt: 'Competencia y premiación',
       category: 'Premiación',
       year: '2023'
-    }
+    },
+    {
+      id: 10,
+      src: '/images/11.webp',
+      alt: 'Competencia y premiación',
+      category: 'Premiación',
+      year: '2023'
+    },
+    {
+      id: 11,
+      src: '/images/12.webp',
+      alt: 'Entrenamiento MVC',
+      category: 'Entrenamiento',
+      year: '2023'
+    },
   ];
 
   const categories = ['Todas', 'Competencia', 'Entrenamiento', 'Premiación'];

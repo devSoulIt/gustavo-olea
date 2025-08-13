@@ -18,7 +18,7 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <ImageWithFallback
-          src="/images/hero.jpg"
+          src="/images/hero.webp"
           alt="Nadador profesional bajo el agua"
           className="w-full h-full object-cover"
         />

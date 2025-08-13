@@ -37,11 +37,10 @@ const Navbar = () => {
   return (
     <>
       <motion.nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled 
-            ? 'bg-white/95 backdrop-blur-md shadow-lg' 
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+            ? 'bg-white/95 backdrop-blur-md shadow-lg'
             : 'bg-transparent'
-        }`}
+          }`}
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
@@ -50,7 +49,11 @@ const Navbar = () => {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center space-x-2">
-              <Waves className={`w-8 h-8 ${isScrolled ? 'text-[var(--brand-primary)]' : 'text-white'}`} />
+              <img
+                src="/images/Logo Gustavo.png"
+                alt="Logo Gustavo Olea"
+                className="w-24 h-24 object-contain"
+              />
               <span className={`text-xl font-bold ${isScrolled ? 'text-[var(--brand-primary)]' : 'text-white'}`}>
                 Gustavo Olea
               </span>
@@ -62,15 +65,14 @@ const Navbar = () => {
                 <button
                   key={link.name}
                   onClick={() => scrollToSection(link.href)}
-                  className={`font-medium transition-colors hover:text-[var(--brand-accent)] ${
-                    isScrolled ? 'text-gray-700' : 'text-white'
-                  }`}
+                  className={`font-medium transition-colors hover:text-[var(--brand-accent)] ${isScrolled ? 'text-gray-700' : 'text-white'
+                    }`}
                   aria-label={`Ir a sección ${link.name}`}
                 >
                   {link.name}
                 </button>
               ))}
-              <Button 
+              <Button
                 onClick={() => scrollToSection('#patrocinio')}
                 className="bg-[var(--brand-accent)] hover:bg-[var(--brand-accent)]/90 text-white border-none"
               >
@@ -123,7 +125,7 @@ const Navbar = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: navLinks.length * 0.1 }}
               >
-                <Button 
+                <Button
                   onClick={() => scrollToSection('#patrocinio')}
                   className="bg-[var(--brand-accent)] hover:bg-[var(--brand-accent)]/90 text-white border-none text-xl px-8 py-4"
                 >
