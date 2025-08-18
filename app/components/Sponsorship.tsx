@@ -42,7 +42,7 @@ const Sponsorship = () => {
     {
       icon: <Eye className="w-6 h-6" />,
       title: 'Visibilidad en Competencias',
-      description: 'Logo en traje de baño durante todas las competencias internacionales',
+      description: 'Logo en la remera durante todas las competencias internacionales',
       value: '50+ eventos anuales'
     },
     {
