@@ -190,16 +190,16 @@ const MediaKit = () => {
                 <div className="space-y-3 text-sm">
                   <div>
                     <span className="font-semibold">Email:</span><br />
-                    prensa@alexmartinez.com
+                    gustavoolea23@gmail.com
                   </div>
                   <div>
                     <span className="font-semibold">Teléfono:</span><br />
-                    +54 9 11 2345-6789
+                    +54 9 3863 562958
                   </div>
-                  <div>
+                  {/* <div>
                     <span className="font-semibold">Manager:</span><br />
                     Carlos Méndez
-                  </div>
+                  </div> */}
                 </div>
               </CardContent>
             </Card>
