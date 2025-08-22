@@ -7,64 +7,54 @@ import CompetitionCard from './CompetitionCard';
 const Competitions = () => {
   const competitions = [
     {
-      date: 'Julio 2024',
-      event: 'Campeonato Mundial de París',
-      location: 'París, Francia',
-      result: '1:45.23',
-      position: '7° lugar',
-      finaRanking: '#7 Mundial',
-      record: 'Récord Sudamericano',
-      link: 'https://www.worldaquatics.com'
+      date: 'Agosto 2022',
+      event: 'Clasificatoria juevos evita',
+      location: 'Argentina',
+      result: '-',
+      position: '-',
+      finaRanking: '-',
+      record: '-',
+      link: '#'
     },
     {
-      date: 'Abril 2024',
-      event: 'Copa América de Natación',
-      location: 'São Paulo, Brasil',
-      result: '1:46.15',
-      position: '2° lugar',
-      finaRanking: '#12 Mundial',
-      record: 'Récord Nacional',
-      link: 'https://www.worldaquatics.com'
-    },
-    {
-      date: 'Febrero 2024',
-      event: 'Campeonato Sudamericano',
-      location: 'Buenos Aires, Argentina',
-      result: '1:47.03',
+      date: 'Febrero 2023',
+      event: 'Dique los sauces',
+      location: 'Rioja, Argentina',
+      result: '-',
       position: '1° lugar',
-      finaRanking: '#15 Mundial',
-      record: 'Récord del Torneo',
-      link: 'https://www.consanat.org'
+      finaRanking: '1km',
+      record: '-',
+      link: '#'
     },
     {
-      date: 'Diciembre 2023',
-      event: 'Mundial de Piscina Corta',
-      location: 'Melbourne, Australia',
-      result: '1:46.78',
-      position: '8° lugar',
-      finaRanking: '#8 Mundial',
-      link: 'https://www.worldaquatics.com'
+      date: 'Marzo 2025',
+      event: 'Final noa - Dique campo alegre',
+      location: 'Salta, Argentina',
+      result: '-',
+      position: 'Top 2',
+      finaRanking: '-',
+      record: '-',
+      link: '#'
     },
     {
-      date: 'Septiembre 2023',
-      event: 'Juegos Panamericanos',
-      location: 'Santiago, Chile',
-      result: '1:45.89',
-      position: '2° lugar',
-      finaRanking: '#9 Mundial',
-      record: 'Récord de Juegos',
-      link: 'https://www.santiago2023.org'
+      date: 'Marzo 2025',
+      event: 'Embalse - Calamuchita',
+      location: 'Cordoba, Argentina',
+      result: '-',
+      position: 'Top 5',
+      finaRanking: '-',
+      link: '#'
     },
     {
-      date: 'Julio 2023',
-      event: 'Mundial de Budapest',
-      location: 'Budapest, Hungría',
-      result: '1:46.45',
-      position: '7° lugar',
-      finaRanking: '#7 Mundial',
-      record: 'Récord Nacional',
-      link: 'https://www.worldaquatics.com'
-    }
+      date: 'Dicimebre 2024',
+      event: 'Pileta lewis tennis',
+      location: 'Santiago del estero, Argentina',
+      result: '-',
+      position: '1° lugar',
+      finaRanking: '-',
+      record: '-',
+      link: '#'
+    },
   ];
 
   return (
