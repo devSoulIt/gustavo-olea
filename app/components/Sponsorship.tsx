@@ -68,7 +68,7 @@ const Sponsorship = () => {
   const sponsorshipTiers = [
     {
       name: 'Patrocinador Principal',
-      amount: '$50.000 USD',
+      amount: '$50.000 ARS',
       benefits: [
         'Logo e indumentaria',
         'Publicidad en redes sociales',
@@ -79,7 +79,7 @@ const Sponsorship = () => {
     },
     {
       name: 'Patrocinador Oficial',
-      amount: '$35.000 USD',
+      amount: '$35.000 ARS',
       benefits: [
         'Publicidad en redes sociales',
         'Entrevistas y menciones',
@@ -90,7 +90,7 @@ const Sponsorship = () => {
     },
     {
       name: 'Colaborador',
-      amount: '$15.000 USD',
+      amount: '$15.000 ARS',
       benefits: [
         'Publicidad en redes sociales',
         'Publicidad de productos y servicios',

@@ -21,7 +21,7 @@ const MediaKit = () => {
       description: 'Información detallada sobre mi carrera, logros y oportunidades de patrocinio',
       fileType: 'PDF',
       fileSize: '2.5 MB',
-      fileName: 'alex-martinez-dossier-2025.pdf',
+      fileName: 'gustavo-olea-dossier-2025.pdf',
       featured: true
     },
     {
@@ -30,7 +30,7 @@ const MediaKit = () => {
       description: 'Galería completa de fotos profesionales para uso comercial',
       fileType: 'ZIP',
       fileSize: '45 MB',
-      fileName: 'alex-martinez-photos-hr.zip',
+      fileName: 'gustavo-olea-photos-hr.zip',
       featured: false
     },
     {
@@ -39,7 +39,7 @@ const MediaKit = () => {
       description: 'Logotipos vectoriales y elementos de marca en diferentes formatos',
       fileType: 'ZIP',
       fileSize: '8 MB',
-      fileName: 'alex-martinez-logos.zip',
+      fileName: 'gustavo-olea-logos.zip',
       featured: false
     },
     {
@@ -48,7 +48,7 @@ const MediaKit = () => {
       description: 'Material audiovisual para campañas y presentaciones',
       fileType: 'ZIP',
       fileSize: '120 MB',
-      fileName: 'alex-martinez-videos.zip',
+      fileName: 'gustavo-olea-videos.zip',
       featured: false
     }
   ];
@@ -91,9 +91,8 @@ const MediaKit = () => {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <Card className={`h-full transition-all duration-300 hover:shadow-xl hover:-translate-y-1 ${
-                    item.featured ? 'ring-2 ring-[var(--brand-accent)]' : ''
-                  }`}>
+                  <Card className={`h-full transition-all duration-300 hover:shadow-xl hover:-translate-y-1 ${item.featured ? 'ring-2 ring-[var(--brand-accent)]' : ''
+                    }`}>
                     <CardHeader className="text-center">
                       {item.featured && (
                         <Badge className="bg-[var(--brand-accent)] text-white w-fit mx-auto mb-2">
@@ -116,14 +115,14 @@ const MediaKit = () => {
                       </div>
                       <Button
                         onClick={() => handleDownload(item.fileName)}
-                        className={`w-full ${
-                          item.featured 
-                            ? 'bg-[var(--brand-accent)] hover:bg-[var(--brand-accent)]/90 text-white border-none'
-                            : 'bg-[var(--brand-primary)] hover:bg-[var(--brand-primary)]/90 text-white border-none'
-                        }`}
+                        className={`w-full ${item.featured
+                          ? 'bg-[var(--brand-accent)] hover:bg-[var(--brand-accent)]/90 text-white border-none'
+                          : 'bg-[var(--brand-primary)] hover:bg-[var(--brand-primary)]/90 text-white border-none'
+                          }`}
+                        disabled
                       >
                         <Download className="w-4 h-4 mr-2" />
-                        Descargar
+                        No disponible
                       </Button>
                     </CardContent>
                   </Card>

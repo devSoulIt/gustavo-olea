@@ -59,7 +59,7 @@ const Testimonials = () => {
     if (!isAutoPlaying) return;
 
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => 
+      setCurrentIndex((prevIndex) =>
         prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
       );
     }, 5000);
@@ -116,7 +116,7 @@ const Testimonials = () => {
                     <CardContent className="p-8 md:p-12">
                       <div className="text-center">
                         <Quote className="w-12 h-12 text-[var(--brand-accent)] mx-auto mb-6" />
-                        
+
                         <blockquote className="text-lg md:text-xl text-gray-700 leading-relaxed mb-8 italic">
                           "{testimonials[currentIndex].content}"
                         </blockquote>
@@ -159,11 +159,10 @@ const Testimonials = () => {
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  index === currentIndex 
-                    ? 'bg-[var(--brand-accent)] w-8' 
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentIndex
+                    ? 'bg-[var(--brand-accent)] w-8'
                     : 'bg-gray-300 hover:bg-gray-400'
-                }`}
+                  }`}
                 aria-label={`Ir al testimonio ${index + 1}`}
               />
             ))}
@@ -191,15 +190,27 @@ const Testimonials = () => {
           <h3 className="text-2xl md:text-3xl font-bold text-center mb-8">
             Respaldo Profesional
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              <div className="text-4xl font-bold text-[var(--brand-accent)] mb-2">8</div>
-              <div className="text-lg">Años de co nadador</div>
+              <div className="flex flex-col">
+                <div className="text-4xl font-bold text-[var(--brand-accent)] mb-2">8</div>
+                <div className="text-lg">Años como nadador</div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <div className="text-4xl font-bold text-[var(--brand-accent)] mb-2">4</div>
+              <div className="text-lg">Años de guardavida</div>
             </motion.div>
           </div>
         </motion.div>

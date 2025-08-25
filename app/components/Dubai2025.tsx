@@ -51,7 +51,7 @@ const Dubai2025 = () => {
     {
       icon: <Users className="w-6 h-6" />,
       title: 'Estadia',
-      amount: '$1.600',
+      amount: '$2.000',
       description: 'Alojamiento y logística para el equipo técnico y de apoyo'
     },
     {
@@ -189,7 +189,7 @@ const Dubai2025 = () => {
 
               <div className="text-center border-t border-white/30 pt-6">
                 <div className="text-3xl font-bold text-[var(--brand-accent)] mb-2">
-                  $9.100 USD
+                  $9.500 USD
                 </div>
                 <div className="text-lg mb-6">Inversión total necesaria</div>
                 <Button
