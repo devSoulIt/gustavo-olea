@@ -13,6 +13,7 @@ interface GalleryImage {
   alt: string;
   category: string;
   year: string;
+  type?: 'image' | 'video';
 }
 
 const Gallery = () => {
@@ -98,6 +99,22 @@ const Gallery = () => {
       category: 'Entrenamiento',
       year: '2023'
     },
+    {
+      id: 12,
+      src: '/videos/Gustavo.MP4',
+      alt: 'Video Gustavo',
+      category: 'Entrenamiento',
+      year: '2023',
+      type: 'video'
+    },
+    {
+      id: 13,
+      src: '/videos/Gustavo2.MP4',
+      alt: 'Video Gustavo',
+      category: 'Entrenamiento',
+      year: '2023',
+      type: 'video'
+    },
   ];
 
   const categories = ['Todas', 'Competencia', 'Entrenamiento', 'Premiación'];
@@ -160,8 +177,8 @@ const Gallery = () => {
               key={category}
               onClick={() => setFilter(category)}
               variant={filter === category ? 'default' : 'outline'}
-              className={filter === category 
-                ? 'bg-[var(--brand-primary)] text-white hover:bg-[var(--brand-primary)]/90' 
+              className={filter === category
+                ? 'bg-[var(--brand-primary)] text-white hover:bg-[var(--brand-primary)]/90'
                 : 'text-[var(--brand-primary)] border-[var(--brand-primary)] hover:bg-[var(--brand-primary)] hover:text-white'
               }
             >
@@ -183,11 +200,20 @@ const Gallery = () => {
               onClick={() => openLightbox(image)}
             >
               <div className="relative overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300">
-                <ImageWithFallback
-                  src={image.src}
-                  alt={image.alt}
-                  className="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-300"
-                />
+                {image.type === 'video' ? (
+                  <video
+                    src={image.src}
+                    loop
+                    muted
+                    className="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                ) : (
+                  <ImageWithFallback
+                    src={image.src}
+                    alt={image.alt}
+                    className="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                )}
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-end">
                   <div className="p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                     <Badge className="bg-[var(--brand-accent)] text-white mb-2">
@@ -218,12 +244,22 @@ const Gallery = () => {
                 exit={{ scale: 0.8 }}
                 onClick={(e) => e.stopPropagation()}
               >
-                <ImageWithFallback
-                  src={selectedImage.src}
-                  alt={selectedImage.alt}
-                  className="max-w-full max-h-[80vh] object-contain rounded-lg"
-                />
-                
+                {selectedImage.type === 'video' ? (
+                  <video
+                    src={selectedImage.src}
+                    loop
+                    autoPlay
+                    muted
+                    className="max-w-full max-h-[80vh] object-contain rounded-lg"
+                  />
+                ) : (
+                  <ImageWithFallback
+                    src={selectedImage.src}
+                    alt={selectedImage.alt}
+                    className="max-w-full max-h-[80vh] object-contain rounded-lg"
+                  />
+                )}
+
                 {/* Navigation */}
                 <Button
                   onClick={prevImage}
@@ -239,7 +275,7 @@ const Gallery = () => {
                 >
                   <ChevronRight className="w-6 h-6" />
                 </Button>
-                
+
                 {/* Close Button */}
                 <Button
                   onClick={closeLightbox}
