@@ -92,20 +92,22 @@ const Competitions = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           viewport={{ once: true }}
         >
-          <div className="bg-white rounded-2xl p-8 shadow-lg inline-block">
-            <h3 className="text-2xl font-bold text-[var(--brand-primary)] mb-4">
-              Competencia NOA
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-[var(--brand-accent)] mb-2">2°</div>
-                <div className="text-gray-600">Ranking</div>
+          <div className="flex justify-center">
+            <div className="bg-white rounded-2xl p-8 shadow-lg inline-block">
+              <h3 className="text-2xl font-bold text-[var(--brand-primary)] mb-4">
+                Competencia NOA
+              </h3>
+              <div className=" flex flex-col justify-center items-center gap-6 w-full">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-[var(--brand-accent)] mb-2">2°</div>
+                  <div className="text-gray-600">Ranking</div>
+                </div>
               </div>
             </div>
           </div>
         </motion.div>
-      </div>
-    </section>
+      </div >
+    </section >
   );
 };
 

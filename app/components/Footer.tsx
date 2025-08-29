@@ -72,11 +72,11 @@ const Footer = () => {
                 <h3 className="text-2xl font-bold">Gustavo Olea</h3>
               </div>
               <p className="text-lg mb-6 text-gray-300 leading-relaxed">
-                Nadador argentino de alto rendimiento con la meta de representar al país 
-                en la Copa del Mundo de Natación Dubái 2025. Buscando patrocinadores 
+                Nadador argentino de alto rendimiento con la meta de representar al país
+                en la Copa del Mundo de Natación Dubái 2025. Buscando patrocinadores
                 que compartan la pasión por la excelencia deportiva.
               </p>
-              
+
               {/* Contact Info */}
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
@@ -137,7 +137,7 @@ const Footer = () => {
               >
                 Conviértete en Patrocinador
               </Button>
-              
+
               {/* Social Links */}
               <div className="flex space-x-4 justify-center">
                 {socialLinks.map((social) => (
@@ -170,7 +170,7 @@ const Footer = () => {
             <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
               Recibe actualizaciones sobre mis entrenamientos, competencias y el camino hacia Dubái 2025
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+            {/* <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
               <input
                 type="email"
                 placeholder="Tu email"
@@ -179,7 +179,7 @@ const Footer = () => {
               <Button className="bg-[var(--brand-accent)] hover:bg-[var(--brand-accent)]/90 text-white border-none px-8">
                 Suscribirse
               </Button>
-            </div>
+            </div> */}
           </div>
         </motion.div>
 
@@ -191,7 +191,7 @@ const Footer = () => {
                 © {currentYear} Gustavo Olea. Todos los derechos reservados.
               </p>
             </div>
-            
+
             <div className="flex flex-wrap justify-center md:justify-end space-x-6">
               {legalLinks.map((link) => (
                 <a
@@ -204,12 +204,17 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          
-          <div className="text-center mt-4 pt-4 border-t border-white/10">
+
+          <div className="flex flex-col gap-4 text-center mt-4 pt-4 border-t border-white/10">
             <p className="text-gray-400 text-sm flex items-center justify-center">
-              Hecho con <Heart className="w-4 h-4 mx-1 text-[var(--brand-accent)]" /> 
+              Hecho con <Heart className="w-4 h-4 mx-1 text-[var(--brand-accent)]" />
               para alcanzar los sueños olímpicos
             </p>
+
+            <div className='flex justify-center items-center gap-2'>
+              <p>Desarrollado por</p>
+              <a href="https://www.devsoulit.com/" target='_blank' className='text-[var(--brand-accent)]'>DevSoul</a>
+            </div>
           </div>
         </div>
       </div>
