@@ -27,11 +27,11 @@ export default function App() {
             "sport": "Swimming",
             "nationality": "Argentina",
             "description": "Nadador profesional argentino especializado en 200m estilo libre, buscando patrocinadores para competir en la Copa del Mundo de Natación Dubái 2025",
-            "url": "https://alexmartinez.com",
+            "url": "https://gustavonadador.com",
             "sameAs": [
-              "https://instagram.com/alexmartinezswim",
-              "https://twitter.com/alexmartinezswim",
-              "https://linkedin.com/in/alexmartinezswim"
+              // "https://instagram.com/alexmartinezswim",
+              // "https://twitter.com/alexmartinezswim",
+              // "https://linkedin.com/in/alexmartinezswim"
             ],
             "hasOccupation": {
               "@type": "Occupation",
@@ -62,7 +62,7 @@ export default function App() {
       </main>
 
       {/* Footer */}
-      <Footer />
+      {/* <Footer /> */}
 
       {/* Toast Notifications */}
       <Toaster

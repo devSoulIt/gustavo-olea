@@ -116,7 +116,7 @@ const Dubai2025 = () => {
                 <h4 className="text-xl font-bold text-center mb-6">
                   Tiempo restante para Dubái 2025
                 </h4>
-                <div className="grid grid-cols-4 gap-4 text-center">
+                <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-center">
                   {[
                     { label: 'Días', value: timeLeft.days },
                     { label: 'Horas', value: timeLeft.hours },

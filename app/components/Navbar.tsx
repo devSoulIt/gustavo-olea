@@ -38,8 +38,8 @@ const Navbar = () => {
     <>
       <motion.nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-            ? 'bg-white/95 backdrop-blur-md shadow-lg'
-            : 'bg-transparent'
+          ? 'bg-white/95 backdrop-blur-md shadow-lg'
+          : 'bg-transparent'
           }`}
         initial={{ y: -100 }}
         animate={{ y: 0 }}
@@ -49,12 +49,14 @@ const Navbar = () => {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center space-x-2">
-              <img
-                src="/images/Logo Gustavo.png"
-                alt="Logo Gustavo Olea"
-                className="w-24 h-24 object-contain"
-              />
-              <span className={`text-xl font-bold ${isScrolled ? 'text-[var(--brand-primary)]' : 'text-white'}`}>
+              <div className={`${isScrolled && "md:w-36 md:h-36"} relative w-16 h-16 md:w-32 md:h-32 flex-shrink-0`}>
+                <img
+                  src={isScrolled ? "/images/Logo Gustavo2.png" : "/images/Logo Gustavo.png"}
+                  alt="Logo Gustavo Olea"
+                  className={`${isScrolled && "-top-2 -left-2"} absolute inset-0 w-full h-full object-contain`}
+                />
+              </div>
+              <span className={`text-lg md:text-xl font-bold ${isScrolled ? 'text-[var(--brand-primary)]' : 'text-white'}`}>
                 Gustavo Olea
               </span>
             </div>
