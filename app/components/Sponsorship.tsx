@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import axios from 'axios';
 import { motion } from 'framer-motion';
 import { Send, Phone, MessageCircle, Eye, Users, TrendingUp, Calendar, Star, Mail } from 'lucide-react';
 import { Button } from './ui/button';
@@ -29,13 +30,16 @@ const Sponsorship = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-
-    // Simulate form submission
-    setTimeout(() => {
-      toast("¡Mensaje enviado con éxito! Te contactaré pronto.");
-      setFormData({ name: '', company: '', email: '', message: '' });
-      setIsSubmitting(false);
-    }, 2000);
+    try {
+      await axios.post('/api/send', formData)
+        .then(() => {
+          toast("¡Mensaje enviado con éxito! Te contactaré pronto.");
+          setFormData({ name: '', company: '', email: '', message: '' });
+          setIsSubmitting(false);
+        });
+    } catch (error) {
+      console.log("🚀 ~ handleSubmit ~ error:", error)
+    }
   };
 
   const roiBenefits = [
@@ -316,7 +320,7 @@ const Sponsorship = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <Button
-                className="w-full text-[var(--brand-primary)] border-none justify-start"
+                  className="w-full text-[var(--brand-primary)] border-none justify-start"
                   size="lg"
                 >
                   <Mail />
